@@ -1,0 +1,29 @@
+# Byte-compiled / temporary files
+__pycache__/
+*.py[cod]
+*.swp
+
+# Virtual environment
+venv/
+.env
+*.venv
+Pipfile.lock
+
+# Logs & database
+*.log
+db.sqlite3
+instance/
+
+# Frontend dependencies (if using Node.js/React)
+node_modules/
+dist/
+build/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
