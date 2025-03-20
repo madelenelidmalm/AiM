@@ -1,12 +1,12 @@
 # AiM - Kulturbidrag Analys
 
 ## Beskrivning
-Detta projekt är en öppen källkodsplattform för att ladda upp, analysera och organisera offentliga handlingar om beviljade kulturbidrag. Systemet stödjer olika filformat (PDF, DOCX, TXT, HTML) och låter användare söka och filtrera bidrag baserat på årtal och bidragsnamn.
+Detta projekt är en öppen källkodsplattform för att ladda upp, analysera och organisera offentliga handlingar. Systemet stödjer olika filformat (PDF, DOCX, TXT, HTML) och låter användare söka och filtrera projekt baserat på årtal och bidragsnamn.
 
 ## Funktioner
 ✅ Ladda upp och lagra dokument i molnet  
 ✅ Automatisk analys och extraktion av metadata  
-✅ Sökning och filtrering av bidrag  
+✅ Sökning och filtrering  
 ✅ Webbaserat gränssnitt  
 ✅ Databaslagring (SQLite/PostgreSQL)  
 
