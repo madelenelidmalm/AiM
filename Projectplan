@@ -1,7 +1,6 @@
 Risk Assesment
-Here are three of the biggest risks associated with this project, along with potential solutions and mitigation strategies:
-Risk: Data Quality and Availability:
-Description: The success of the grant application system heavily relies on the quality and availability of data from web scraping and PDF extraction. Websites can change their structure, making scrapers obsolete. PDF documents can be poorly formatted or scanned, leading to errors in text extraction. Access to data might be limited by paywalls or terms of service.
+Data Quality and Availability:
+The success of the application system heavily relies on the quality and availability of data from web scraping and PDF extraction. Websites can change their structure, making scrapers obsolete. PDF documents can be poorly formatted or scanned, leading to errors in text extraction. Access to data might be limited by paywalls or terms of service.
 Impact: Inaccurate or incomplete data will lead to a poor user experience, unreliable recommendations, and ultimately, a failed project.
 Mitigation Strategies:
 Robust Scraping: Use a combination of scraping techniques (BeautifulSoup, Selenium, Scrapy) and be prepared to adapt to website changes. Implement error handling and retry mechanisms. Use rotating proxies and user agents.
@@ -11,11 +10,8 @@ Legal Compliance: Ensure that all web scraping activities comply with the terms 
 Manual Review: Incorporate a mechanism for manual review and correction of extracted data, especially for critical fields.
 Partnerships: Explore partnerships with organizations to gain data.
 
-
-
-
-Risk: AI Model Limitations and Bias:
-Description: The AI models (NLP, LLMs) used for text analysis, categorization, and recommendation might have limitations in their understanding of complex language, nuanced requirements, or specific cultural contexts. They might also exhibit biases (e.g., favoring certain types of projects or organizations). The "AI-Driven Cognitive Execution" aspect relies heavily on the assumption that AI can reliably improve human decision-making, which is still an open research question.
+AI Model Limitations and Bias:
+The AI models (NLP, LLMs) used for text analysis, categorization, and recommendation might have limitations in their understanding of complex language, nuanced requirements, or specific cultural contexts. They might also exhibit biases (e.g., favoring certain types of projects or organizations). The "AI-Driven Cognitive Execution" aspect relies heavily on the assumption that AI can reliably improve human decision-making, which is still an open research question.
 Impact: Poor AI performance will lead to inaccurate recommendations, unfair evaluations, and ultimately, user distrust. Biases could perpetuate existing inequalities in the funding landscape.
 Mitigation Strategies:
 Model Selection: Carefully choose AI models that are appropriate for the specific tasks and evaluate their performance thoroughly.
