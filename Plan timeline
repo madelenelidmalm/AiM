@@ -1,0 +1,106 @@
+Collaboration: Humans and AI working together, not AI replacing humans.
+Augmentation: AI enhancing human capabilities (rather than pure automation).
+Ethical Considerations: Addressing potential biases, privacy concerns, and ensuring responsible AI development.
+Specific Domain: i haven't specified a domain, I need to choose something to make the model concrete. I'll focus on "Personalized Education and Skill Development" as a good example, but this can be adapted.
+Open Source: Prioritizing open-source tools and frameworks
+Automated Application System for Funds in Creative Industries
+
+Date: 2025-03-12
+Version: 1.1
+Project Owner: [madelene Olandersson/ aimnexus]
+Contact: [aimnexus@icloud.com / 0735025171]
+1. Overview
+
+Project Goal: To automate the process of finding, retrieving, and managing grant applications for funds within the creative and artistic industries in Sweden.
+Objectives:
+Automatically identify and collect funds and application forms.
+Extract and convert application documents to editable formats.
+Create an organized database where applications are categorized by industry, target group, and requirements.
+Export compiled applications in user-friendly formats.
+Expected Results:
+An automated system that searches for funds in real-time.
+A database with categorized application documents.
+An API for retrieving and filtering applications.
+A web interface where users can search for relevant funds.
+Analysis: This section clearly defines the project's scope and objectives. It's well-defined and focuses on a specific niche (creative industries in Sweden). The expected results are measurable and achievable.
+
+2. System Architecture
+
+Web Scraping: BeautifulSoup, Selenium, and Scrapy for retrieving fund information. Google Search API for identifying relevant websites.
+PDF Extraction: PyMuPDF and Tesseract OCR.
+Text Analysis and Categorization: spaCy and NLTK.
+Database: PostgreSQL or SQLite.
+Document Conversion: Google Docs API.
+Backend: FastAPI or Flask.
+Scheduling/Automation: Celery and Redis.
+Authentication: OAuth 2.0.
+Analysis: This is a solid technology stack. The choices are appropriate for the tasks:
+
+Web Scraping: Good choices. Selenium is useful for dynamic websites that require JavaScript execution. Scrapy is excellent for large-scale scraping. BeautifulSoup is good for simpler, static pages.
+PDF Extraction: PyMuPDF is a very strong choice (fast and reliable). Tesseract is the standard open-source OCR engine.
+NLP: spaCy and NLTK are excellent choices. spaCy is generally faster and more production-ready, while NLTK has a wider range of research tools.
+Database: PostgreSQL is the preferred choice for a production system due to its robustness and scalability. SQLite is suitable for development and smaller deployments.
+Google Docs API: A good choice for generating editable documents.
+Backend: FastAPI is an excellent choice for building APIs – it's modern, fast, and automatically generates API documentation. Flask is also a good option, but FastAPI is generally preferred for new API development.
+Celery/Redis: Excellent choices for asynchronous task management (essential for web scraping and other long-running processes).
+OAuth 2.0: The standard for secure authentication.
+3. Functional Requirements
+
+Web scraping to identify funds via Google Search API and collect data from fund portals like Kulturrådet (Swedish Arts Council) and Konstnärsnämnden (The Swedish Arts Grants Committee).
+Download application documents in PDF and online form formats.
+Use PyMuPDF to extract text from digital PDFs and Tesseract OCR for scanned documents.
+Use NLP models to analyze and categorize the content.
+Use Google Docs API to convert PDF forms to editable applications.
+Build a relational database in PostgreSQL with tables for funds, application documents and user data. Use FastAPI to create a REST API.
+The system will be automatically updated using Celery/Cron Jobs.
+Notifications and email reminders can be implemented.
+Analysis: These requirements are well-defined and cover the core functionality of the system. The use of specific Swedish fund portals (Kulturrådet, Konstnärsnämnden) provides a concrete starting point.
+
+4. Development Plan and Milestones
+
+The project is divided into six phases.
+Phase 1 (2 weeks): Proof of concept – basic web scraping of 3-5 fund portals.
+Phase 2 (3 weeks): PDF extraction with PyMuPDF and OCR.
+Phase 3 (3 weeks): Database and API development.
+Phase 4 (4 weeks): Web portal development with filtering.
+Phase 5 (3 weeks): Automation with Celery and Cron Jobs.
+Phase 6 (4 weeks): Testing and launch.
+Total Development Time: 4-5 months.
+Analysis: The timeline is reasonable, and the phased approach is good for managing complexity. The proof of concept (Phase 1) is crucial for validating the feasibility of web scraping the target websites.
+
+5. Next Steps
+
+Set up the development environment:
+Create a GitHub repository.
+Install necessary Python libraries.
+Configure a PostgreSQL database.
+Build a proof of concept:
+Test web scraping on the Kulturrådet website.
+Extract text from PDF applications.
+Store basic fund data in PostgreSQL.
+Build a REST API with FastAPI.
+Implement automation with Celery and Cron Jobs.
+Optionally, build a simple web portal with React or Next.js.
+Analysis: These are the correct next steps. Focusing on the proof of concept first is essential.
+
+6. Future Improvements
+
+AI-assisted application writing (using an LLM to generate standardized applications).
+Integrate more fund sources (including international funds and private foundations).
+Integrate with cultural organizations' CRM systems.
+Analysis: These are good ideas for future enhancements. The AI-assisted application writing is particularly ambitious and would be a significant differentiator.
+
+7. Summary
+
+The system automates the process of finding and managing grant applications for the creative industries.
+The solution is based on web scraping, PDF extraction, and NLP-based categorization.
+The system is expected to reduce administrative time, increase accessibility to relevant funds, and create an efficient tool for creative professionals and companies.
+Analysis: This is a concise and accurate summary of the project.
+
+Refined Action Plan (Combining Previous Steps and This Specification):
+
+Now that I have the technical specification, I can provide a more concrete and tailored action plan. We'll combine the best parts of both plans:
+
+GitHub Repository Setup (You):
+Create a private GitHub repository named grant-app (or similar).
+Create the project structure I outlined previously:
