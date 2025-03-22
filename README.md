@@ -1,23 +1,57 @@
-# AiM - Kulturbidrag Analys
+# AiM – AI-driven Cognitive Execution Engine
 
-## Beskrivning
-Detta projekt är en öppen källkodsplattform för att ladda upp, analysera och organisera offentliga handlingar. Systemet stödjer olika filformat (PDF, DOCX, TXT, HTML) och låter användare söka och filtrera projekt baserat på årtal och bidragsnamn.
+**Vision:**  
+AiM (AI Merging) är en öppen plattform för människa-AI-samverkan där målet är att optimera tänkande, arbetsflöden och beslutsfattande i kreativa och kulturella sektorer – utan finansiering, som open source och med full transparens.
 
-## Funktioner
-✅ Ladda upp och lagra dokument i molnet  
-✅ Automatisk analys och extraktion av metadata  
-✅ Sökning och filtrering  
-✅ Webbaserat gränssnitt  
-✅ Databaslagring (SQLite/PostgreSQL)  
+---
 
-## Teknologi
-- Backend: Python (Flask)  
-- Frontend: HTML/CSS + JavaScript (kan utökas med React)  
-- Databas: SQLite (kan uppgraderas till PostgreSQL)  
-- Molnlagring: Google Drive eller AWS S3  
+## Funktioner (pågående utveckling)
+- Automatisk bidragssökning (Kulturrådet, Konstnärsnämnden m.fl.)
+- PDF-extraktion + NLP-analys med spaCy
+- FastAPI-backend + PostgreSQL-databas
+- AI-promptbibliotek för strukturellt tänkande
+- Kommande: AI-assisterad ansökningsskrivning och beslutsstöd
 
-## Installation
-1. Klona repot:
-   ```sh
-   git clone https://github.com/madelenelidmalm/AiM.git
-   cd AiM
+---
+
+## Teknisk stack
+- **Backend:** Python, FastAPI
+- **Databas:** PostgreSQL
+- **Scraping:** BeautifulSoup, Selenium
+- **PDF & OCR:** PyMuPDF, Tesseract
+- **NLP:** spaCy, NLTK
+- **Automation:** Celery, Cron
+- **AI-integration:** Gemini / GPT / Hugging Face
+
+---
+
+## Roadmap
+- [x] Strukturera GitHub-repo
+- [x] Dokumentera teknisk specifikation
+- [ ] Skapa scraping-modul för Kulturrådet
+- [ ] Bygga REST API (FastAPI)
+- [ ] Konvertera och analysera PDF:er
+- [ ] Publicera white paper
+- [ ] Göra pilotfall för grant automation
+
+---
+
+## Projektstatus
+Projektet är i aktiv utveckling och söker:
+- Feedback
+- Samarbetspartners
+- Finansiellt/ideellt stöd
+- Intresserade utvecklare och forskare
+
+---
+
+## Kontakt
+Skapare: **Madelene Olandersson**  
+Mail: [aimnexus@icloud.com](mailto:aimnexus@icloud.com)  
+GitHub: [github.com/madelenelidmalm](https://github.com/madelenelidmalm)  
+Projektnamn: **AiM** (AI Merging / AIMNEXUS)
+
+---
+
+## Licens
+Detta projekt är open source enligt [MIT-licensen](LICENSE).
